@@ -8,12 +8,12 @@
     #wrap
       .top
         #banner
-          = img "banner.png"
-    
+          #header
+            %h1 :: progriff.com
       #menu
         %ul
           %li
-            = link "Home", "/index.html"
+            = link "Home", "/"
           %li
             = link "About"
           %li
@@ -23,6 +23,6 @@
         = yield
 
       #footer 
-        &copy; 2009 Progriff.com - benson at spawncamp.net
+        &copy; 2009 progriff.com - benson at spawncamp.net
        
         = link_to img( "xhtml_valid.png"), 'http://validator.w3.org/check?uri=referer'
