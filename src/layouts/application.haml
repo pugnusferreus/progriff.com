@@ -1,0 +1,28 @@
+!!! Strict
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
+
+  %head
+    %title Prog Riff
+    = stylesheets
+  %body
+    #wrap
+      .top
+        #banner
+          = img "banner.png"
+    
+      #menu
+        %ul
+          %li
+            = link "Home", "/index.html"
+          %li
+            = link "About"
+          %li
+            = link "Links"
+      
+      #content
+        = yield
+
+      #footer 
+        &copy; 2009 Progriff.com - benson at spawncamp.net
+       
+        = link_to img( "xhtml_valid.png"), 'http://validator.w3.org/check?uri=referer'
