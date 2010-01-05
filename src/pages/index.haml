@@ -10,16 +10,23 @@
     = link "here", "http://github.com/pugnusferreus/lunchpicker"
 
 = section_header 'Music'
-
+= index_js
 .text
   %h3 Gillian Tan
-
   %p
-    = link "If I were human", "music/if%20i%20were%20human.mp3"
-    |
-    = link "Run away", "music/runaway.mp3"
-    |
-    = link "This possible love", "music/this_possible_love.mp3"
+    %a{:href => "#", :id => "if_i_were_human"} If I were human
+    #if_i_were_human_div.text
+      #if_i_were_human_player
+      = link "Download!", "http://progriff.com/music/if%20i%20were%20human.mp3"
+
+  %p 
+    %a{:href => "#", :id => "run_away"} Run Away
+    #run_away_div.text
+      = link "Download!", "music/runaway.mp3"
+  %p  
+    %a{:href => "#", :id => "this_possible_love"} This Possible Love
+    #this_possible_love_div.text
+      = link "Download!", "music/this_possible_love.mp3"
 
 .text  
   %h3 Ira Deorum
