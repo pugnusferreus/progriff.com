@@ -33,13 +33,37 @@ module HeaderHelper
               $('#this_possible_love_div').toggle(400);
               return false;
             });
+            
             $("#if_i_were_human_player").jmp3({
-              filepath: "music/if%20i%20were%20human.mp3",
+              filepath: "http://progriff.com/music/if%20i%20were%20human.mp3",
               width: 200,
-              showdownload: "true"
-
+              backcolor: "000000",
+              forecolor: "00ff00",
+              showfilename: "true",
+              showdownload: "false",
+              volume: 80
             });
-
+            
+            $("#runaway_player").jmp3({
+              filepath: "http://progriff.com/music/runaway.mp3",
+              width: 200,
+              backcolor: "000000",
+              forecolor: "00ff00",
+              showfilename: "true",
+              showdownload: "false",
+              volume: 80
+            });
+            
+            
+            $("#this_possible_love_player").jmp3({
+              filepath: "http://progriff.com/music/this_possible_love.mp3",
+              width: 200,
+              backcolor: "000000",
+              forecolor: "00ff00",
+              showfilename: "true",
+              showdownload: "false",
+              volume: 80
+            });
           });
       </script>
     HTML

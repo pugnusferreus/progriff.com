@@ -15,18 +15,21 @@
   %h3 Gillian Tan
   %p
     %a{:href => "#", :id => "if_i_were_human"} If I were human
-    #if_i_were_human_div.text
-      #if_i_were_human_player
-      = link "Download!", "http://progriff.com/music/if%20i%20were%20human.mp3"
-
-  %p 
+    %span{:id => "if_i_were_human_div", :class => "music_div"}
+      %span{ :id => "if_i_were_human_player", :class => "player_div"}
+      = link_to img("/images/download.png", :alt => 'download', :width => 24, :height => 24),"/music/if%20i%20were%20human.mp3"
+  %p
     %a{:href => "#", :id => "run_away"} Run Away
-    #run_away_div.text
-      = link "Download!", "music/runaway.mp3"
+    #run_away_div.music_div
+      %span{ :id => "runaway_player", :class => "player_div"}
+      = link_to img("/images/download.png", :alt => 'download', :width => 24, :height => 24),"/music/runaway.mp3"
+
   %p  
     %a{:href => "#", :id => "this_possible_love"} This Possible Love
-    #this_possible_love_div.text
-      = link "Download!", "music/this_possible_love.mp3"
+    #this_possible_love_div.music_div
+      %span{ :id => "this_possible_love_player", :class => "player_div"}
+      = link_to img("/images/download.png", :alt => 'download', :width => 24, :height => 24),"/music/this_possible_love.mp3"
+
 
 .text  
   %h3 Ira Deorum
