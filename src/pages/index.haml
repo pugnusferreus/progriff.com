@@ -15,9 +15,17 @@
   %h3 Gillian Tan
   %p
     %a{:href => "#", :id => "if_i_were_human"} If I were human
-    %span{:id => "if_i_were_human_div", :class => "music_div"}
+    %div{:id => "if_i_were_human_div", :class => "music_div"}
       %span{ :id => "if_i_were_human_player", :class => "player_div"}
       = link_to img("/images/download.png", :alt => 'download', :width => 24, :height => 24),"/music/if%20i%20were%20human.mp3"
+      %p
+        Genre: Jazz
+      %p
+        Year: 2009
+      
+      %ul
+        %li
+          test
   %p
     %a{:href => "#", :id => "run_away"} Run Away
     %span{ :id => "run_away_div", :class => "music_div"}
