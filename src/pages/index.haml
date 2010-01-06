@@ -15,7 +15,7 @@
   %h3 Gillian Tan
   %p
     %a{:href => "#", :id => "if_i_were_human"} If I were human
-    %div{:id => "if_i_were_human_div", :class => "music_div"}
+    #if_i_were_human_div.music_div
       %span{ :id => "if_i_were_human_player", :class => "player_div"}
       = link_to img("/images/download.png", :alt => 'download', :width => 24, :height => 24),"/music/if%20i%20were%20human.mp3"
       %dl
@@ -30,19 +30,58 @@
             %dd Vocals
             %dt Erik van Helovoort
             %dd Guitars
+            %dt Keyboards
+            %dd Eric K
             %dt Benson Lim
             %dd Bass
   %p
     %a{:href => "#", :id => "run_away"} Run Away
-    %span{ :id => "run_away_div", :class => "music_div"}
+    #run_away_div.music_div
       %span{ :id => "runaway_player", :class => "player_div"}
       = link_to img("/images/download.png", :alt => 'download', :width => 24, :height => 24),"/music/runaway.mp3"
+      %dl
+        %dt Genre
+        %dd Folk
+        %dt Year
+        %dd 2010
+        %dt Musicians
+        %dd
+          %dl
+            %dt Gillian Tan
+            %dd Vocals
+            %dt Erik van Helovoort
+            %dd Guitars
+            %dt Keyboards
+            %dd Eric K
+            %dt Benson Lim
+            %dd Bass
+            %dt Katelyn
+            %dd Drums
 
   %p  
     %a{:href => "#", :id => "this_possible_love"} This Possible Love
-    %span{ :id => "this_possible_love_div", :class => "music_div"}
+    #this_possible_love_div.music_div
       %span{ :id => "this_possible_love_player", :class => "player_div"}
       = link_to img("/images/download.png", :alt => 'download', :width => 24, :height => 24),"/music/this_possible_love.mp3"
+      %dl
+        %dt Genre
+        %dd Jazz
+        %dt Year
+        %dd 2010
+        %dt Musicians
+        %dd
+          %dl
+            %dt Gillian Tan
+            %dd Vocals
+            %dt Erik van Helovoort
+            %dd Guitars
+            %dt Keyboards
+            %dd Eric K
+            %dt Benson Lim
+            %dd Bass
+            %dt Katelyn
+            %dd Drums
+
 
 
 .text  
