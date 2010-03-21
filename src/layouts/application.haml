@@ -11,13 +11,15 @@
       .top
         #banner
           #header
-            %h1 :: progriff.com
+            %h1 &nbsp;
       #menu
         %ul
           %li
             = link "Home", "/"
           %li
             = link "About"
+          %li
+            = link "Music"
           %li
             = link "Links"
       
@@ -29,12 +31,4 @@
           &copy; 2010 progriff.com - Contact : benson at progriff.com
        
           = link_to img("xhtml_valid.png", :width => 16, :height => 16, :alt => 'Valid XHTML', :title => 'Valid XHTML'), 'http://validator.w3.org/check?uri=referer'
-        %p
-          Created from 
-          = link "StaticMatic", "http://staticmatic.rubyforge.org/"
-          with the help from
-          = link "Haml", "http://haml-lang.com/"
-          and
-          = link "Sass", "http://sass-lang.com/"
-          %br
-          &nbsp;
+        %br
