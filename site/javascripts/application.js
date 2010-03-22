@@ -55,3 +55,19 @@ $(function()
 	});
 	
 });
+
+$(function()
+{
+	$(".tweet").tweet({
+		username: "pugnusferreus",
+		join_text: "auto",
+		avatar_size: 16,
+		count: 5,
+		auto_join_text_default: "", 
+		auto_join_text_ed: "we",
+		auto_join_text_ing: "we were",
+		auto_join_text_reply: "",
+		auto_join_text_url: "we were checking out",
+		loading_text: "loading tweets..."
+	});
+});
