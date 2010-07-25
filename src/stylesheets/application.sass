@@ -5,24 +5,25 @@ body
   font:
     family: "Helvetica"
     size: 11pt
-  background: url('/images/background.png') repeat top left
+  background: url("/images/background.png") repeat top left
 
 #banner
   height: 190px
   border: #666666 1px solid
   position: relative
-  background: url('/images/banner.jpg')
+  background: url("/images/banner.jpg")
 
 #wrap
   border-top-left-radius: 30px
   -webkit-border-top-left-radius: 30px
   -moz-border-radius-topleft: 30px
+
 #banner
   border-top-left-radius: 27px
   -webkit-border-top-left-radius: 27px
   -moz-border-radius-topleft: 27px
 
-#menu 
+#menu
   height: 10px
   margin-top: 50px
   padding-right: 0px
@@ -35,30 +36,28 @@ body
   float: left
   list-style-type: none
 
-
-#menu a 
+#menu a
   min-height: 15px
-  border-top: #CC3300 1px solid
-  border-bottom: #CC3300 1px solid
+  border-top: #cc3300 1px solid
+  border-bottom: #cc3300 1px solid
   display: block
   min-width: 40px
   padding: 2px
   text-decoration: none
   color: #660000
 
-#menu a:hover 
-  border-top: #AAAAAA 1px solid
-  border-bottom: #AAAAAA 1px solid
+#menu a:hover
+  border-top: #aaaaaa 1px solid
+  border-bottom: #aaaaaa 1px solid
   min-height: 0px
   padding: 2px
-
 
 #wrap
   margin: 0 auto
   width: 760px
   height: auto
   background-repeat: repeat-y
-  background: #99CC66
+  background: #99cc66
   border: #666666 3px solid
 
 #header
@@ -69,8 +68,8 @@ body
   font: "Helvetica"
   font-size: 13px
   background-color: #663333
-  background-color: rgba(255,255,255,0.85)
-  color: #FFFFFF
+  background-color: rgba(255, 255, 255, 0.85)
+  color: white
   text-align: right
   border-top-left-radius: 10px
   -webkit-border-top-left-radius: 10px
@@ -86,7 +85,7 @@ body
     margin-right: 2em
     width: 300px
     height: 50px
-    background: url('/images/logo.png') no-repeat center 
+    background: url("/images/logo.png") no-repeat center
 
 .text
   margin-bottom: 10px
@@ -112,18 +111,18 @@ body
 .audio
   margin-left: 20px
   margin-bottom: 1em
-  border= #756142-#050505 2px "solid"
+  border: #756142 - #050505 2px solid
   display: inline-block
   overflow: auto
   padding: 1em
   padding-top: 0.5em
   background-color: #756142
-  color: #ffffff
+  color: white
   border-bottom-right-radius: 10px
   -webkit-border-bottom-right-radius: 10px
   -moz-border-radius-bottomright: 10px
-  -webkit-box-shadow: 4px 4px 16px rgba(64,64,64,0.4)
-  -moz-box-shadow: 4px 4px 16px rgba(64,64,64,0.4)
+  -webkit-box-shadow: 4px 4px 16px rgba(64, 64, 64, 0.4)
+  -moz-box-shadow: 4px 4px 16px rgba(64, 64, 64, 0.4)
   .controls
     margin: 0
     padding: 0
@@ -135,7 +134,7 @@ body
       float: left
       clear: left
       display: inline-block
-      color: rgba(255,255,255,0.7)
+      color: rgba(255, 255, 255, 0.7)
       padding-right: 0.4em
       min-width: 5em
       &::after
@@ -143,7 +142,7 @@ body
     dd
       float: left
       margin-left: 0
-      color: rgba(255,255,255,0.9)
+      color: rgba(255, 255, 255, 0.9)
       dl
         margin: 0
         dt
@@ -154,21 +153,20 @@ body
         dd
           margin-left: 0
           padding-left: 0
-          color: rgba(192,192,192, 0.7)
+          color: rgba(192, 192, 192, 0.7)
           &::before
             content: "- "
 
 #footer
   clear: both
   margin: 0 auto
-  padding: 0px 0 0px 0 
-  border-top: 1px solid #CCCCCCC
+  padding: 0px 0 0px 0
+  border-top: 1px solid #cccccc
   width: 760px
   text-align: center
-  color: #FFFFFF
+  color: white
   font-size: 12px
-  
-  background-color: rgba(102,102,102,0.8)
+  background-color: rgba(102, 102, 102, 0.8)
 
 #footer a
   text-decoration: none
@@ -187,12 +185,11 @@ body
 
 #content
   margin-top: 50px
-  background: url('/images/content_bg.png') no-repeat bottom right
-    
+  background: url("/images/content_bg.png") no-repeat bottom right
+
 h2
   margin-left: 10px
   color: #666666
-  
   font: "Helvetica"
   size: 12pt
   margin-bottom: -1em
@@ -202,34 +199,32 @@ h2
     margin-bottom: 1em
     margin-right: 0.25em
 
-
 #twitter
   h2
     text-align: left
     margin-right: 20px
   margin-bottom: 40px
-  .tweet .tweet_list, .query .tweet_list 
+  .tweet .tweet_list, .query .tweet_list
     list-style-type: none
     margin: 0
     padding: 0
-    background-color: rgba(100,230,205,0.85)
-  .tweet .tweet_list .awesome, .tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic 
+    background-color: rgba(100, 230, 205, 0.85)
+  .tweet .tweet_list .awesome, .tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic
     text-transform: uppercase
-  .tweet .tweet_list li, .query .tweet_list li 
+  .tweet .tweet_list li, .query .tweet_list li
     overflow-y: auto
     overflow-x: hidden
     padding: 0.5em
-  .tweet .tweet_list li a, .query .tweet_list li a 
-    color: #0C717A
-  .tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even 
-    background-color: rgba(255,255,255,0.85)
-  .tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar 
+  .tweet .tweet_list li a, .query .tweet_list li a
+    color: #0c717a
+  .tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even
+    background-color: rgba(255, 255, 255, 0.85)
+  .tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar
     padding-right: 0.5em
     float: left
-  .tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img 
+  .tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img
     vertical-align: middle
-
   .tweet
-    box-shadow: 4px 4px 16px rgba(64,64,64,0.8)
-    -webkit-box-shadow: 4px 4px 16px rgba(64,64,64,0.8)
-    -moz-box-shadow: 4px 4px 16px rgba(64,64,64,0.8)
+    box-shadow: 4px 4px 16px rgba(64, 64, 64, 0.8)
+    -webkit-box-shadow: 4px 4px 16px rgba(64, 64, 64, 0.8)
+    -moz-box-shadow: 4px 4px 16px rgba(64, 64, 64, 0.8)
