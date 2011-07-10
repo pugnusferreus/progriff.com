@@ -63,6 +63,8 @@ $(function()
 		join_text: "auto",
 		avatar_size: 16,
 		count: 5,
+                fetch: 20,
+                filter: function(t){ return ! /^@|^RT/.test(t["tweet_raw_text"]); },
 		auto_join_text_default: "", 
 		auto_join_text_ed: "",
 		auto_join_text_ing: "",
